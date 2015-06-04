@@ -1,0 +1,44 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.example.romotecontroller.MainActivity" >
+
+    <Button
+        android:id="@+id/terminate"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_weight="0.2"
+        android:background="@color/black"
+        android:padding="10dp"
+        android:text="@string/terminate"
+        android:textColor="@color/white" />
+
+    <LinearLayout
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_margin="10dp"
+        android:layout_weight="0.8"
+        android:weightSum="1" >
+
+        <SeekBar
+            android:id="@+id/leftPowerBar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:rotation="270" />
+
+        <SeekBar
+            android:id="@+id/rightPowerBar"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0.5"
+            android:rotation="270" />
+    </LinearLayout>
+
+</LinearLayout>
